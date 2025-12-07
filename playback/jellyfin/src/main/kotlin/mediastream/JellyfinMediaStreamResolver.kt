@@ -37,6 +37,7 @@ class JellyfinMediaStreamResolver(
 				conversionMethod = MediaConversionMethod.None,
 				url = api.videosApi.getVideoStreamUrl(
 					itemId = baseItem.id,
+					container = mediaInfo.mediaSource.container,
 					mediaSourceId = mediaInfo.mediaSource.id,
 					static = true,
 					tag = mediaInfo.mediaSource.eTag,

@@ -116,6 +116,7 @@ class ExternalPlayerActivity : FragmentActivity() {
 	private fun playItem(item: BaseItemDto, mediaSource: MediaSourceInfo, position: Duration) {
 		val url = api.videosApi.getVideoStreamUrl(
 			itemId = item.id,
+			container = mediaSource.container,
 			mediaSourceId = mediaSource.id,
 			static = true,
 		)

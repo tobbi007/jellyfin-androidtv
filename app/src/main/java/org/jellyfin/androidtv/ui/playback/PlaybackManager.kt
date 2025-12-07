@@ -40,6 +40,7 @@ private fun createStreamInfo(
 			source.isRemote && source.path != null -> source.path
 			else -> api.videosApi.getVideoStreamUrl(
 				itemId = itemId,
+				container = source.container,
 				mediaSourceId = source.id,
 				static = true,
 				tag = source.eTag,
